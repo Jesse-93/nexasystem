@@ -14,33 +14,35 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "NEXASYSTEM | Informatique, réseaux et cybersécurité à Belfort",
+    default: "NEXASYSTEM | Solutions informatiques pour entreprises",
     template: "%s | NEXASYSTEM",
   },
 
   description:
-    "NEXASYSTEM accompagne les TPE, PME, artisans et organisations à Belfort et dans le Territoire de Belfort en informatique, réseaux, maintenance, cybersécurité, cloud et développement web.",
+    "NEXASYSTEM accompagne les TPE, PME, artisans et organisations dans leurs projets informatiques : systèmes, réseaux, cybersécurité, cloud et développement web.",
 
   keywords: [
     "NEXASYSTEM",
-    "informatique Belfort",
-    "informaticien Belfort",
-    "maintenance informatique Belfort",
-    "réseau informatique Belfort",
-    "cybersécurité Belfort",
-    "installation réseau Belfort",
-    "dépannage informatique Belfort",
-    "création site web Belfort",
-    "développement web Belfort",
-    "cloud Belfort",
-    "informatique TPE PME",
-    "informatique Territoire de Belfort",
-    "informatique Bourgogne-Franche-Comté",
+    "informatique entreprise",
+    "maintenance informatique",
+    "réseau informatique",
+    "cybersécurité",
+    "cloud",
+    "développement web",
+    "TPE",
+    "PME",
+    "Belfort",
+    "Territoire de Belfort",
+    "Bourgogne-Franche-Comté",
   ],
 
   authors: [{ name: "NEXASYSTEM" }],
   creator: "NEXASYSTEM",
   publisher: "NEXASYSTEM",
+
+  verification: {
+    google: "8GsdFlQw8ptL_rbD9-6SkHI1hcTgCWFSq9Nl3dW3-DY",
+  },
 
   robots: {
     index: true,
