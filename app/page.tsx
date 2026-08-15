@@ -233,29 +233,30 @@ export default function Home() {
 
         {/* TITRE */}
 <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[54px]">
-  L'informatique
+  Votre partenaire
   <br />
 
   <span className="text-blue-500">
-    qui accompagne
+    informatique à Belfort
   </span>
 
   <br />
 
-  votre croissance.
+  et dans le Territoire de Belfort.
 </h1>
 
 {/* DESCRIPTION */}
 <p className="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
   NEXASYSTEM accompagne les TPE, PME, artisans et organisations
-  dans la conception, la sécurisation et la modernisation de
-  leur environnement informatique.
+  de Belfort et du Territoire de Belfort dans la conception,
+  la sécurisation et la modernisation de leur environnement informatique.
 </p>
 
-        <p className="mt-3 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
-          Nous développons également des sites web et des applications
-          web et mobiles sur mesure.
-        </p>
+<p className="mt-3 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+    Nous intervenons en systèmes et réseaux, cybersécurité, maintenance
+    informatique, cloud ainsi qu'en développement de sites web et
+    d'applications sur mesure.
+</p>
 
         {/* BOUTONS */}
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -347,7 +348,7 @@ export default function Home() {
             </p>
 
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-              Des solutions informatiques adaptées à votre entreprise
+              Services informatiques pour les entreprises à Belfort
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
@@ -732,14 +733,17 @@ export default function Home() {
             <div>
 
               <p className="text-lg leading-8 text-slate-300">
-                NEXASYSTEM accompagne les TPE, PME, artisans et organisations
-                dans la gestion, la sécurisation et la modernisation de leur
-                environnement informatique.
+                NEXASYSTEM est une entreprise informatique spécialisée dans les
+                systèmes et réseaux, la cybersécurité, la maintenance informatique,
+                le cloud et le développement web. Nous accompagnons les TPE, PME,
+                artisans et organisations de Belfort et du Territoire de Belfort
+                dans leurs projets numériques.
               </p>
 
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                Notre objectif : proposer des infrastructures fiables,
-                sécurisées et adaptées aux besoins réels de chaque entreprise.
+                Notre objectif : proposer des infrastructures fiables, sécurisées
+                et adaptées aux besoins réels de chaque entreprise, avec un
+                accompagnement de proximité.
               </p>
 
             </div>
@@ -769,9 +773,10 @@ export default function Home() {
       </h2>
 
       <p className="mt-5 text-lg leading-8 text-slate-600">
-        Vous avez un projet informatique, web ou mobile ?
-        Décrivez-nous votre besoin et l'équipe NEXASYSTEM vous répondra.
-      </p>
+        NEXASYSTEM accompagne les entreprises de Belfort et du Territoire de
+        Belfort dans leurs projets informatiques : systèmes et réseaux,
+        cybersécurité, maintenance, cloud, audit et développement numérique.
+    </p>
 
     </div>
 
@@ -1125,7 +1130,7 @@ export default function Home() {
           </p>
 
           <p>
-            Systèmes • Réseaux • Cybersécurité • Développement Web
+            Informatique à Belfort • Systèmes & Réseaux • Cybersécurité • Développement Web
           </p>
 
         </div>
