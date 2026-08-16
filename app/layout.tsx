@@ -40,6 +40,10 @@ export const metadata: Metadata = {
   creator: "NEXASYSTEM",
   publisher: "NEXASYSTEM",
 
+  alternates: {
+    canonical: "https://nexasystem-iota.vercel.app/",
+  },
+
   verification: {
     google: "8GsdFlQw8ptL_rbD9-6SkHI1hcTgCWFSq9Nl3dW3-DY",
   },
@@ -54,7 +58,7 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function RootLayout({ children }: RootLayoutProps)  {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="fr"
