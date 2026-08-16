@@ -54,6 +54,45 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://nexasystem-iota.vercel.app/#organization",
+  name: "NEXASYSTEM",
+  url: "https://nexasystem-iota.vercel.app/",
+  logo: "https://nexasystem-iota.vercel.app/logo-nexasystem.png",
+  description:
+    "NEXASYSTEM accompagne les TPE, PME, artisans et organisations dans leurs projets informatiques : systèmes, réseaux, cybersécurité, cloud et développement web.",
+  email: "Jessekebani@gmail.com",
+  telephone: "+33745506347",
+
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Belfort",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Territoire de Belfort",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Bourgogne-Franche-Comté",
+    },
+  ],
+
+  knowsAbout: [
+    "Systèmes et réseaux",
+    "Cybersécurité",
+    "Maintenance informatique",
+    "Cloud",
+    "Audit informatique",
+    "Développement web",
+    "Applications web",
+    "Applications mobiles",
+  ],
+};
+
 type RootLayoutProps = {
   children: React.ReactNode;
 };
@@ -64,6 +103,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+      </head>
+
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
