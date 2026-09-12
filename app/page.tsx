@@ -1129,9 +1129,43 @@ export default function Home() {
             © 2026 NEXASYSTEM. Tous droits réservés.
           </p>
 
-          <p>
-            Informatique à Belfort • Systèmes & Réseaux • Cybersécurité • Développement Web
-          </p>
+          <div className="flex flex-col items-center gap-3 md:items-end">
+            <p className="text-center md:text-right">
+              Informatique à Belfort • Systèmes & Réseaux • Cybersécurité • Développement Web
+            </p>
+
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <a
+                href="https://www.linkedin.com/company/nexasystem-90/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="NEXASYSTEM sur LinkedIn"
+                className="rounded-lg border border-slate-700 px-3 py-2 text-sm font-medium text-slate-300 transition hover:border-blue-500 hover:text-blue-400"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61594340848423"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="NEXASYSTEM sur Facebook"
+                className="rounded-lg border border-slate-700 px-3 py-2 text-sm font-medium text-slate-300 transition hover:border-blue-500 hover:text-blue-400"
+              >
+                Facebook
+              </a>
+
+              <a
+                href="https://www.instagram.com/nexasystem90/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="NEXASYSTEM sur Instagram"
+                className="rounded-lg border border-slate-700 px-3 py-2 text-sm font-medium text-slate-300 transition hover:border-blue-500 hover:text-blue-400"
+              >
+                Instagram
+              </a>
+            </div>
+          </div>
 
         </div>
       </footer>
