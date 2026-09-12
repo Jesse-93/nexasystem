@@ -97,31 +97,31 @@ export default function Home() {
             </a>
 
             <a
-              href="#services"
+              href="#apropos"
               className="text-sm font-medium text-slate-300 transition hover:text-blue-400"
             >
-              Services
+              Qui sommes-nous ?
             </a>
 
             <a
-              href="#developpement"
+              href="#services"
               className="text-sm font-medium text-slate-300 transition hover:text-blue-400"
             >
-              Développement
+              Nos services
             </a>
 
             <a
               href="#solutions"
               className="text-sm font-medium text-slate-300 transition hover:text-blue-400"
             >
-              Solutions
+              Nos solutions
             </a>
 
             <a
-              href="#apropos"
+              href="#formation"
               className="text-sm font-medium text-slate-300 transition hover:text-blue-400"
             >
-              À propos
+              Formation
             </a>
 
             <a
@@ -682,12 +682,14 @@ export default function Home() {
             <div>
 
               <p className="text-sm font-semibold uppercase tracking-wider text-blue-400">
-                À propos de NEXASYSTEM
+                Qui sommes-nous ?
               </p>
 
               <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-                Un partenaire informatique au service de votre entreprise.
+                Un partenaire informatique de proximité pour les professionnels.
               </h2>
+
+              <div className="mt-6 h-1 w-16 rounded-full bg-blue-500" />
 
             </div>
 
@@ -709,6 +711,101 @@ export default function Home() {
 
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* =========================
+          FORMATION
+      ========================== */}
+      <section id="formation" className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+                Formation
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Développez les compétences numériques de vos équipes
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                NEXASYSTEM propose des formations adaptées aux professionnels
+                pour mieux utiliser leurs outils, renforcer leurs pratiques
+                numériques et améliorer la sécurité au quotidien.
+              </p>
+              <a
+                href="#contact"
+                className="mt-8 inline-flex rounded-xl bg-blue-600 px-6 py-3.5 font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-500"
+              >
+                Demander une formation
+              </a>
+            </div>
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7">
+                <div className="text-3xl">🎓</div>
+                <h3 className="mt-4 text-lg font-bold text-slate-900">Outils numériques</h3>
+                <p className="mt-2 leading-6 text-slate-600">Bureautique, outils collaboratifs et bonnes pratiques numériques.</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7">
+                <div className="text-3xl">🔐</div>
+                <h3 className="mt-4 text-lg font-bold text-slate-900">Cybersécurité</h3>
+                <p className="mt-2 leading-6 text-slate-600">Sensibilisation aux risques et adoption des bons réflexes.</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7">
+                <div className="text-3xl">🌐</div>
+                <h3 className="mt-4 text-lg font-bold text-slate-900">Systèmes & réseaux</h3>
+                <p className="mt-2 leading-6 text-slate-600">Comprendre et utiliser efficacement son environnement informatique.</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7">
+                <div className="text-3xl">💡</div>
+                <h3 className="mt-4 text-lg font-bold text-slate-900">IA & productivité</h3>
+                <p className="mt-2 leading-6 text-slate-600">Découvrir des usages concrets de l'intelligence artificielle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================
+          NOS ENGAGEMENTS
+      ========================== */}
+      <section className="bg-slate-950 py-24 text-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-400">
+              Nos engagements
+            </p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+              Une informatique pensée pour votre activité
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-300">
+              Des solutions utiles, fiables et adaptées à la réalité de chaque entreprise.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            <article className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
+              <div className="text-3xl">🤝</div>
+              <h3 className="mt-5 text-xl font-bold">Proximité</h3>
+              <p className="mt-3 leading-7 text-slate-300">
+                Un accompagnement professionnel au plus près des entreprises de Belfort et du Territoire de Belfort.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
+              <div className="text-3xl">🛡️</div>
+              <h3 className="mt-5 text-xl font-bold">Sécurité</h3>
+              <p className="mt-3 leading-7 text-slate-300">
+                La protection des systèmes, des données et des usages fait partie intégrante de nos solutions.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
+              <div className="text-3xl">⚙️</div>
+              <h3 className="mt-5 text-xl font-bold">Sur mesure</h3>
+              <p className="mt-3 leading-7 text-slate-300">
+                Des recommandations adaptées à vos besoins, à vos contraintes et à la taille de votre structure.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -1136,7 +1233,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-3 md:items-end">
             <p className="text-center md:text-right">
-              Informatique à Belfort • Systèmes & Réseaux • Cybersécurité • Développement Web
+              Solutions informatiques pour les professionnels • Belfort & Territoire de Belfort
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3">
