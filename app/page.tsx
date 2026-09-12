@@ -286,47 +286,6 @@ export default function Home() {
 
       </div>
 
-      {/* PHOTO PROFESSIONNELLE */}
-      <div className="hidden lg:block">
-        <div className="relative mx-auto max-w-md">
-
-          <div className="overflow-hidden rounded-3xl border border-slate-700 bg-slate-900 shadow-2xl shadow-blue-950/50">
-
-            <Image
-              src="/photo-professionnelle.jpg"
-              alt="Professionnel NEXASYSTEM dans un environnement informatique"
-              width={1536}
-              height={2048}
-              className="h-[560px] w-full object-cover object-center"
-              priority
-            />
-
-            <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/10 bg-slate-950/90 p-4 backdrop-blur">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">
-                NEXASYSTEM
-              </p>
-
-              <p className="mt-1 text-base font-bold text-white">
-                Systèmes • Réseaux • Cybersécurité • Développement Web
-              </p>
-            </div>
-
-          </div>
-
-          {/* BADGE FLOTTANT */}
-          <div className="absolute -bottom-5 -left-5 rounded-2xl border border-blue-500/30 bg-blue-600 p-4 shadow-xl shadow-blue-600/20">
-            <p className="text-xs font-medium text-blue-100">
-              Votre informatique
-            </p>
-
-            <p className="mt-1 text-xl font-bold text-white">
-              Notre expertise
-            </p>
-          </div>
-
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
