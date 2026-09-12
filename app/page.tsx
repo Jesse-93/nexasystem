@@ -125,6 +125,13 @@ export default function Home() {
             </a>
 
             <a
+              href="#actualites"
+              className="text-sm font-medium text-slate-300 transition hover:text-blue-400"
+            >
+              Actualités
+            </a>
+
+            <a
               href="#contact"
               className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500"
             >
@@ -186,6 +193,14 @@ export default function Home() {
         className="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-slate-800 hover:text-white"
         >
         À propos
+      </a>
+
+      <a
+        href="#actualites"
+        onClick={() => setMenuOpen(false)}
+        className="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-slate-800 hover:text-white"
+        >
+        Actualités
       </a>
 
       <a
@@ -698,7 +713,51 @@ export default function Home() {
         </div>
       </section>
 
-   {/* =========================
+      {/* =========================
+          ACTUALITÉS
+      ========================== */}
+      <section id="actualites" className="bg-slate-50 py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Actualités</p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Les dernières actualités de NEXASYSTEM
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              Conseils, nouveautés, formations et informations utiles pour accompagner les entreprises dans leur transformation numérique.
+            </p>
+          </div>
+          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+            <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <div className="relative h-56 overflow-hidden bg-slate-100">
+                <Image src="/actualites/services-informatiques.jpg" alt="Services informatiques proposés par NEXASYSTEM" fill className="object-cover" />
+              </div>
+              <div className="p-7">
+                <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">NEXASYSTEM • Services</p>
+                <h3 className="mt-3 text-xl font-bold text-slate-900">NEXASYSTEM développe son offre de services informatiques</h3>
+                <p className="mt-4 leading-7 text-slate-600">Découvrez nos domaines d’intervention : infrastructures & réseaux, cybersécurité, cloud, développement web et applications.</p>
+                <a href="#services" className="mt-6 inline-flex font-semibold text-blue-600 transition hover:text-blue-700">Découvrir nos services →</a>
+              </div>
+            </article>
+            <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-2xl">🎓</div>
+              <p className="mt-7 text-xs font-semibold uppercase tracking-wider text-blue-600">Formation</p>
+              <h3 className="mt-3 text-xl font-bold text-slate-900">Des formations informatiques adaptées aux professionnels</h3>
+              <p className="mt-4 leading-7 text-slate-600">Systèmes & réseaux, bureautique, cybersécurité et développement web : développez les compétences utiles à votre activité.</p>
+              <a href="#contact" className="mt-6 inline-flex font-semibold text-blue-600 transition hover:text-blue-700">Nous contacter →</a>
+            </article>
+            <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-2xl">🔐</div>
+              <p className="mt-7 text-xs font-semibold uppercase tracking-wider text-blue-600">Cybersécurité</p>
+              <h3 className="mt-3 text-xl font-bold text-slate-900">La cybersécurité au cœur de votre entreprise</h3>
+              <p className="mt-4 leading-7 text-slate-600">Protéger les données, les postes de travail et les réseaux est devenu essentiel pour assurer la continuité et la sécurité de votre activité.</p>
+              <a href="#services" className="mt-6 inline-flex font-semibold text-blue-600 transition hover:text-blue-700">Découvrir nos solutions →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+{/* =========================
     CONTACT / DEMANDE DE DEVIS
 ========================== */}
 <section
