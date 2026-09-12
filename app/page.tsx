@@ -204,91 +204,78 @@ export default function Home() {
           HERO
       ========================== */}
       <section
-  id="accueil"
-  className="relative overflow-hidden bg-slate-950 text-white"
->
-  {/* EFFETS LUMINEUX */}
-  <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
-  <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
+        id="accueil"
+        className="relative min-h-[calc(100vh-90px)] overflow-hidden bg-slate-950 text-white"
+      >
+        {/* FORMES LUMINEUSES EN ARRIÈRE-PLAN */}
+        <div className="pointer-events-none absolute -left-56 top-24 h-[720px] w-[720px] rounded-full border border-blue-500/20" />
+        <div className="pointer-events-none absolute -right-64 -top-40 h-[760px] w-[760px] rounded-full border border-blue-500/20" />
+        <div className="pointer-events-none absolute -right-72 bottom-[-420px] h-[900px] w-[900px] rounded-full border border-blue-500/20" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/10 blur-3xl" />
 
-  <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-    <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="relative mx-auto flex min-h-[calc(100vh-90px)] max-w-7xl items-center justify-center px-6 py-16 text-center lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-6xl">
 
-      {/* TEXTE */}
-      <div>
+            {/* BADGE */}
+            <div className="mb-7 inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-5 py-2.5">
+              <span className="mr-2 h-2.5 w-2.5 rounded-full bg-blue-400" />
+              <span className="text-sm font-medium text-blue-300 sm:text-base">
+                Solutions informatiques pour entreprises
+              </span>
+            </div>
 
-        {/* BADGE */}
-        <div className="mb-5 inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2">
-          <span className="mr-2 h-2 w-2 rounded-full bg-blue-400" />
+            {/* DOMAINES */}
+            <p className="mb-5 text-xs font-bold uppercase tracking-[0.28em] text-blue-400 sm:text-sm lg:text-base">
+              Systèmes • Réseaux • Cybersécurité • Cloud
+            </p>
 
-          <span className="text-sm font-medium text-blue-300">
-            Solutions informatiques pour entreprises
-          </span>
+            {/* TITRE */}
+            <h1 className="mx-auto max-w-6xl text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-[64px]">
+              Votre partenaire
+              <br />
+              <span className="text-blue-500">
+                informatique à Belfort
+              </span>
+              <br />
+              et dans le Territoire de Belfort.
+            </h1>
+
+            {/* DESCRIPTION */}
+            <p className="mx-auto mt-7 max-w-5xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 lg:text-xl">
+              NEXASYSTEM accompagne les TPE, PME, artisans et organisations de Belfort et du Territoire de Belfort dans la conception, la sécurisation et la modernisation de leur environnement informatique.
+            </p>
+
+            <p className="mx-auto mt-3 max-w-5xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 lg:text-xl">
+              Nous intervenons en systèmes et réseaux, cybersécurité, maintenance informatique, cloud ainsi qu'en développement de sites web et d'applications sur mesure.
+            </p>
+
+            {/* BOUTONS */}
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href="#contact"
+                className="w-full rounded-xl bg-blue-600 px-7 py-4 text-center font-semibold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-500 sm:w-auto"
+              >
+                Demander un devis
+              </a>
+
+              <a
+                href="#services"
+                className="w-full rounded-xl border border-blue-500/70 bg-white/5 px-7 py-4 text-center font-semibold text-white transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-500/10 sm:w-auto"
+              >
+                Découvrir nos services
+              </a>
+            </div>
+
+            {/* GARANTIES */}
+            <div className="mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm text-slate-300 sm:text-base">
+              <span>✓ Solutions sur mesure</span>
+              <span>✓ Accompagnement professionnel</span>
+              <span>✓ Sécurité au cœur de nos solutions</span>
+            </div>
+
+          </div>
         </div>
-
-        {/* DOMAINES */}
-        <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-blue-400 sm:text-sm">
-          Systèmes • Réseaux • Cybersécurité • Cloud
-        </p>
-
-        {/* TITRE */}
-<h1 className="max-w-2xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[54px]">
-  Votre partenaire
-  <br />
-
-  <span className="text-blue-500">
-    informatique à Belfort
-  </span>
-
-  <br />
-
-  et dans le Territoire de Belfort.
-</h1>
-
-{/* DESCRIPTION */}
-<p className="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
-  NEXASYSTEM accompagne les TPE, PME, artisans et organisations
-  de Belfort et du Territoire de Belfort dans la conception,
-  la sécurisation et la modernisation de leur environnement informatique.
-</p>
-
-<p className="mt-3 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
-    Nous intervenons en systèmes et réseaux, cybersécurité, maintenance
-    informatique, cloud ainsi qu'en développement de sites web et
-    d'applications sur mesure.
-</p>
-
-        {/* BOUTONS */}
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-
-          <a
-            href="#contact"
-            className="rounded-lg bg-blue-600 px-6 py-3.5 text-center font-semibold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-500"
-          >
-            Demander un devis
-          </a>
-
-          <a
-            href="#services"
-            className="rounded-lg border border-slate-700 bg-white/5 px-6 py-3.5 text-center font-semibold text-white transition hover:border-blue-500 hover:bg-blue-500/10"
-          >
-            Découvrir nos services
-          </a>
-
-        </div>
-
-        {/* GARANTIES */}
-        <div className="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-400">
-          <span>✓ Solutions sur mesure</span>
-          <span>✓ Accompagnement professionnel</span>
-          <span>✓ Sécurité au cœur de nos solutions</span>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* =========================
           SERVICES
